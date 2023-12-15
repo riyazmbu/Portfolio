@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Pricing Table</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pricing-table {
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .table {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .table th, .table td {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .table th {
+      background-color: #ef9b00;
+      color: #fff;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .table td {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .table .highlight {
+      background-color: #f4f4f4;
+    }
+
+    @media (max-width: 767px) {
+      .table th, .table td {
+        padding: 15px;
+      }
+    }
+    h1
+    {
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container pricing-table">
+    <table class="table table-responsive-md">
+        <h1>Riyaz Plans</h1>
+        <br>
+      <thead>
+        <tr>
+          <th scope="col">Plan</th>
+          <th scope="col">Features</th>
+          <th scope="col">Price</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Silver</td>
+          <td>
+            <ul>
+              <li>Upto 480p Quality</li>
+              <li>Unlimited Ads</li>
+            </ul>
+          </td>
+          <td>Rs.299/month</td>
+          <td><a href="#" class="btn btn-primary">Buy Now</a></td>
+        </tr>
+        <tr class="highlight">
+          <td>Gold</td>
+          <td>
+            <ul>
+              <li>Upto 720p Quality</li>
+              <li>Limited Ads</li>
+            </ul>
+          </td>
+          <td>Rs.499/month</td>
+          <td><a href="#" class="btn btn-primary">Buy Now</a></td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>
+            <ul>
+              <li>Upto 1080p Quality</li>
+              <li>No Ads</li>
+            </ul>
+          </td>
+          <td>Rs.999/month</td>
+          <td><a href="#" class="btn btn-primary">Buy Now</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
